@@ -10,7 +10,7 @@ function HeroSection() {
           experiences that drive growth and engagement.
         </p>
         <div className="buttons">
-          {/* <button className="Hero-button">Get Started</button> */}
+          <button className="Hero-button">Get Started</button>
           {/* <button className="Hero-button Hero-button-secondary">
             Learn More
           </button> */}
