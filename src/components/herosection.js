@@ -1,10 +1,10 @@
-import codebase from "../assets/codebase.jpg";
+// import codebase from "../assets/codebase.jpg";
 
 function HeroSection() {
   return (
     <div className="Hero-container">
       <div className="Hero-div">
-        <h1>Build Amazing Digital Products</h1>
+        <h1>Build Digital Products</h1>
         <p>
           We help businesses create stunning web applications and digital
           experiences that drive growth and engagement.
