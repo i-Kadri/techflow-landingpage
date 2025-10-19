@@ -1,0 +1,9 @@
+.Hero-div {
+  background: #d9e5ff;
+}
+
+.hero-img {
+  max-width: 60%;
+  object-fit: cover;
+  max-height: 40vh;
+}
