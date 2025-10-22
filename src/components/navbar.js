@@ -3,21 +3,20 @@ import { FaBolt } from "react-icons/fa6";
 function Navbar() {
   return (
     <div className="navbar-box">
-      <div className="Logo">
-        {" "}
-        <span className="logo-text">
+      <div className="Logo-box">
+        <div className="logo-icon">
           <FaBolt
-            style={{
-              background: "#1619c7",
-              padding: "5px",
-              borderRadius: "5px",
-            }}
-            size="1em"
-            margin=".5em"
-            color="white"
-          />{" "}
-        </span>
-        TechFlow
+          // style={{
+          //   background: "#1619c7",
+          //   // padding: "6px",
+          //   borderRadius: "7px",
+          // }}
+          // size="1em"
+          // margin=".5em"
+          // color="white"
+          />
+        </div>
+        <div className="logo-text">TechFlow</div>
       </div>
       <ul className="nav-links">
         <li>Home</li>

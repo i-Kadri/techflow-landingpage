@@ -6,15 +6,40 @@
   justify-content: space-between;
 }
 
-.Logo {
+/* .Logo {
   font-size: 24px;
   font-weight: bold;
   padding: 0 default 0.7rem 12px;
+} */
+
+.Logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.logo-icon {
+  background-color: #1619c7;
+  border-radius: 7px;
+  margin-right: 0.5rem;
+  display: block;
+}
+
+.logo-icon svg {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+}
+
+.logo-text {
+  font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
 }
+
 .nav-links li {
   display: inline;
   margin-left: 20px;
