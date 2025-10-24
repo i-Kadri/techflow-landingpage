@@ -1,5 +1,6 @@
 .Hero-container {
   width: 100%;
+  box-sizing: border-box;
   padding-top: 1rem;
   display: flex;
   align-items: center;
@@ -29,10 +30,9 @@
 }
 
 .Hero-image img {
-  max-width: 50%;
+  max-width: 100%;
   width: 100%;
   object-fit: contain;
   display: flex;
-  flex-wrap: wrap;
   height: 100%;
 }
