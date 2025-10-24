@@ -1,9 +1,17 @@
-.Hero-div {
+.Hero-container {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.Hero-box {
   background: #d9e5ff;
+  padding: 1rem 2rem;
+  display: flex;
+  height: auto;
 }
 
 .hero-img {
   max-width: 60%;
-  object-fit: cover;
-  max-height: 40vh;
+  object-fit: contain;
+  height: 100%;
 }
