@@ -1,17 +1,38 @@
 .Hero-container {
   width: 100%;
   padding-top: 1rem;
-}
-
-.Hero-box {
-  background: #d9e5ff;
-  padding: 1rem 2rem;
   display: flex;
-  height: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  margin: 0.6rem 0;
+  background-color: #e6edff;
 }
 
-.hero-img {
-  max-width: 60%;
+.Hero-div {
+  padding: 1rem 2rem;
+  width: auto;
+  flex: 1;
+}
+
+.Hero-div h1 {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 550;
+}
+
+.Hero-image {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  flex: 1;
+}
+
+.Hero-image img {
+  max-width: 50%;
+  width: 100%;
   object-fit: contain;
+  display: flex;
+  flex-wrap: wrap;
   height: 100%;
 }
