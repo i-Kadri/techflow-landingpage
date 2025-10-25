@@ -24,6 +24,7 @@
   border-radius: 7px;
   margin-right: 0.5rem;
   display: block;
+  cursor: pointer;
 }
 
 .logo-icon svg {
@@ -41,6 +42,7 @@
 }
 
 .nav-links li {
+  cursor: pointer;
   display: inline;
   margin-left: 20px;
   padding-right: 0.5rem;
