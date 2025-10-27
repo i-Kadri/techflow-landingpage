@@ -3,7 +3,6 @@
 function HeroSection() {
   return (
     <div className="Hero-container">
-      {/* <div className="Hero-box"> */}
       <div className="Hero-div">
         <h1>
           Build Amazing <br />

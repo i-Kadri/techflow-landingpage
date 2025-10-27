@@ -1,0 +1,30 @@
+.Services-container {
+  margin: 0.7rem auto;
+  width: 100%;
+}
+
+.service-box {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.service-box h2 {
+  font-weight: 550;
+  font-size: 40px;
+}
+
+.service-box p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.Services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
