@@ -1,4 +1,5 @@
 // import codebase from "../assets/codebase.jpg";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function HeroSection() {
   return (
@@ -14,7 +15,13 @@ function HeroSection() {
         </p>
 
         <div className="buttons">
-          <button className="hero-btn">Get Started</button>
+          <button className="hero-btn">
+            Get Started{" "}
+            <span>
+              {" "}
+              <FaArrowRightLong />{" "}
+            </span>{" "}
+          </button>
           {/* <button className="Hero-button Hero-button-secondary">
               Learn More
             </button> */}

@@ -48,6 +48,10 @@ button {
   box-shadow: 0 4px 6px rgba(59, 62, 238, 0.3);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+button span {
+  margin-left: 3px;
+}
 button:first-child {
   background-color: #3b3eee;
 }

@@ -1,3 +1,6 @@
+import { FaRocket } from "react-icons/fa";
+import { FaPalette, FaShieldHalved } from "react-icons/fa6";
+
 function Services() {
   return (
     <div className="Services-container">
@@ -12,7 +15,16 @@ function Services() {
 
       <div className="service-cards">
         <div className="fast-card">
-          <div className="fast-logo"></div>
+          <div className="fast-logo">
+            <FaRocket
+              style={{
+                color: "#3b3eee",
+                background: "#f0f0ff",
+                padding: "15px",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
           <h3>Fast Performance</h3>
           <p>
             Lightning-fast loading times and optimized performance for best user
@@ -21,7 +33,16 @@ function Services() {
         </div>
 
         <div className="security-card">
-          <div className="security-logo"></div>
+          <div className="security-logo">
+            <FaShieldHalved
+              style={{
+                color: "#3b3eee",
+                background: "#f0f0ff",
+                padding: "15px",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
           <h3>Secure & Reliable</h3>
           <p>
             Enterprise-grade security measures and 99.9% uptime guarantee to
@@ -30,7 +51,16 @@ function Services() {
         </div>
 
         <div className="design-card">
-          <div className="design-logo"></div>
+          <div className="design-logo">
+            <FaPalette
+              style={{
+                color: "#3b3eee",
+                background: "#f0f0ff",
+                padding: "15px",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
           <h3>Beautiful Design</h3>
           <p>
             Stunning modern designs that captivate your audience and reflect
