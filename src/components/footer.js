@@ -1,11 +1,20 @@
-import { FaBolt, FaLinkedin } from "react-icons/fa";
+import { FaBolt, FaLinkedin } from "react-icons/fa6";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
     <footer className="footer-box">
       <div className="footer-icon">
-        <FaBolt style={{}} />
+        <FaBolt
+          style={{
+            background: "#3b3eee",
+            padding: "0.5rem",
+            borderRadius: "7px",
+            margin: ".5em",
+            color: "white",
+            display: "block",
+          }}
+        />
         <h3>TechFlow</h3>
       </div>
       {/* <div className="logo-text">TechFlow</div> */}

@@ -5,6 +5,8 @@
   background: #181929;
   margin-top: 4rem;
   padding: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .footer-icon {
@@ -14,8 +16,19 @@
   color: white;
 }
 
+.footer-icon svg {
+  font-size: 24px;
+}
+
 Footer > span,
 footer > p,
 .footer-links > span {
   color: white;
+}
+
+.footer-links span {
+  margin-right: 1.5rem;
+  gap: 1.5rem;
+  cursor: pointer;
+  font-size: 25px;
 }
