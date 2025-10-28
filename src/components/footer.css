@@ -1,0 +1,21 @@
+.footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #181929;
+  margin-top: 4rem;
+  padding: 3rem;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+Footer > span,
+footer > p,
+.footer-links > span {
+  color: white;
+}
