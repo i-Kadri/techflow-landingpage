@@ -1,3 +1,4 @@
+import { FaTimes, FaBars } from "react-icons/fa";
 import { FaBolt } from "react-icons/fa6";
 
 function Navbar() {
@@ -17,6 +18,10 @@ function Navbar() {
           />
         </div>
         <div className="logo-text">TechFlow</div>
+      </div>
+      <div className="burgerMenu">
+        <FaTimes style={{ size: "24px", padding: "4px" }} />
+        <FaBars />
       </div>
       <ul className="nav-links">
         <li>Home</li>
