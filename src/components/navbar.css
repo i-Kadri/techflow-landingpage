@@ -1,16 +1,11 @@
 .navbar-box {
   margin: 0.5rem 2rem -1rem 2rem;
+  width: auto;
   padding: 10px 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-/* .Logo {
-  font-size: 24px;
-  font-weight: bold;
-  padding: 0 default 0.7rem 12px;
-} */
 
 .Logo-box {
   display: flex;
@@ -48,19 +43,65 @@
   padding-right: 0.5rem;
 }
 
+.burgerMenu {
+  cursor: pointer;
+  display: none;
+}
+
 /* ---------------Media queries------------- */
+
 @media screen and (max-width: 768px) {
   .navbar-box {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+
+  .Logo-box {
+    font-size: 24px;
   }
 
   .nav-links {
-    margin-top: 10px;
+    margin-top: -2px;
+    position: absolute;
+    top: 68px;
+    left: -40px;
+    width: 100vw;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* display: none; */
+    border-radius: 0 0 12px 12px;
+    border-bottom: 1px solid #e0e0e0;
   }
 
   .nav-links li {
     display: block;
-    margin: 10px 0;
+    font-size: 20px;
+    margin: 2rem 0;
+    padding: 0.5rem auto;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .logo-icon {
+    margin-left: -20px;
+  }
+
+  .burgerMenu {
+    display: block;
+    z-index: 10;
+    font-size: 24px;
+    margin-left: 4rem;
+  }
+
+  .burgerMenu .closeBtn {
+    font-size: 24px;
+    cursor: pointer;
+    /* display: none; */
+  }
+
+  .burgerMenu .openBtn {
+    cursor: pointer;
   }
 }

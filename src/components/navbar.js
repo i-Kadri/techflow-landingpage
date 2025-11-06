@@ -19,16 +19,24 @@ function Navbar() {
         </div>
         <div className="logo-text">TechFlow</div>
       </div>
-      <div className="burgerMenu">
-        <FaTimes style={{ size: "24px", padding: "4px" }} />
-        <FaBars />
-      </div>
+
       <ul className="nav-links">
         <li>Home</li>
         <li>About</li>
         <li>Services</li>
         <li>Contact</li>
       </ul>
+
+      <div className="burgerMenu">
+        <FaTimes
+          className="closeBtn"
+          style={{ size: "24px", padding: "4px" }}
+        />
+        <FaBars
+          className="openBtn"
+          style={{ padding: "4px", marginTop: "10px" }}
+        />
+      </div>
     </div>
   );
 }
