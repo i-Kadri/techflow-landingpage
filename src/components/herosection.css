@@ -86,11 +86,11 @@ button:last-child:hover {
   cursor: pointer;
   transform: rotate(5deg);
   transition: transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
-  mask-image: radial-gradient(circle, rgb(30, 61, 128) 60%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
+  mask-image: radial-gradient(circle, rgb(57, 76, 97) 60%, transparent 100%);
 }
 
 .Hero-image img:hover {
+  animation-play-state: paused;
   transform: rotate(0deg) scale(1.05);
 }
 
@@ -166,11 +166,35 @@ button:last-child:hover {
   }
   .Hero-image img {
     width: 98%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
     height: auto;
     transform: rotate(0deg);
+    animation: floatBubble 3s ease-in-out infinite;
   }
 
   .Hero-image img:hover {
-    transform: rotate(4deg) scale(1.05);
+    transform: scale(1.05);
+    animation: paused;
+  }
+
+  @keyframes floatBubble {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate3d(-6px, -8px, 0) rotate(-1deg);
+    }
+    50% {
+      transform: translate3d(8px, -14px, 0) rotate(1deg);
+    }
+    75% {
+      transform: translate3d(10px, -6px, 0) rotate(-0.5deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
   }
 }

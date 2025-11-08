@@ -32,3 +32,25 @@ footer > p,
   cursor: pointer;
   font-size: 25px;
 }
+
+.footer-links span:hover {
+  color: #3b3eee;
+}
+
+/* ---------------Media Queries -------------- */
+
+@media screen and (max-width: 768px) {
+  .footer-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}

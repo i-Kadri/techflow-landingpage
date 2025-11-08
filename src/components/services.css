@@ -69,4 +69,68 @@
 
 /* ---------------Media queries------------- */
 @media screen and (max-width: 768px) {
+  .service-box {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .service-box h2 {
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  .service-box p {
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 15px auto;
+    padding: 0 10px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: none;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .fast-card,
+  .security-card,
+  .design-card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+  }
+  .fast-card svg,
+  .security-card svg,
+  .design-card svg {
+    width: 20px;
+    height: 20px;
+    margin: 1rem auto;
+    margin-bottom: 0;
+  }
+
+  .fast-card h3,
+  .security-card h3,
+  .design-card h3 {
+    font-size: 22px;
+    margin: 0 auto;
+  }
+  .fast-card p,
+  .security-card p,
+  .design-card p {
+    padding: 1rem;
+  }
 }
