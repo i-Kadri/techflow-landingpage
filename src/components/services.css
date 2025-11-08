@@ -66,3 +66,7 @@
   color: #555555;
   font-size: 14px;
 }
+
+/* ---------------Media queries------------- */
+@media screen and (max-width: 768px) {
+}
