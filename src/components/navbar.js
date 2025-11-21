@@ -1,43 +1,62 @@
+import React, { useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { FaBolt } from "react-icons/fa6";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen((v) => !v);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <div className="navbar-box">
+    <nav className="navbar-box" role="navigation" aria-label="Main">
       <div className="Logo-box">
-        <div className="logo-icon">
-          <FaBolt
-          // style={{
-          //   background: "#1619c7",
-          //   // padding: "6px",
-          //   borderRadius: "7px",
-          // }}
-          // size="1em"
-          // margin=".5em"
-          // color="white"
-          />
+        <div className="logo-icon" aria-hidden="true">
+          <FaBolt size={20} color="white" />
         </div>
         <div className="logo-text">TechFlow</div>
       </div>
 
-      <ul className="nav-links">
+      <button
+        className="menu-toggle"
+        onClick={toggleMenu}
+        aria-expanded={menuOpen}
+        aria-controls="primary-navigation"
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+      >
+        {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+      </button>
+
+      <ul
+        id="primary-navigation"
+        className={`nav-links ${menuOpen ? "open" : ""}`}
+        onClick={closeMenu}
+      >
         <li>Home</li>
         <li>About</li>
         <li>Services</li>
         <li>Contact</li>
       </ul>
-
-      <div className="burgerMenu">
-        <FaTimes
-          className="closeBtn"
-          style={{ size: "24px", padding: "4px" }}
-        />
-        <FaBars
-          className="openBtn"
-          style={{ padding: "4px", marginTop: "10px" }}
-        />
-      </div>
-    </div>
+    </nav>
   );
 }
+
 export default Navbar;
+
+function burgerMenu() {
+  const navLinks = document.querySelector(".nav-links");
+  const openBtn = document.querySelector(".openBtn");
+  const closeBtn = document.querySelector(".closeBtn");
+
+  openBtn.addEventListener("click", () => {
+    navLinks.style.display = "flex";
+    openBtn.style.display = "none";
+    closeBtn.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    navLinks.style.display = "none";
+    openBtn.style.display = "block";
+    closeBtn.style.display = "none";
+  });
+}
+export { burgerMenu };

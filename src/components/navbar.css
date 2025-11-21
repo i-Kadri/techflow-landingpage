@@ -55,7 +55,6 @@
     flex-direction: row;
     align-items: center;
     position: relative;
-    display: none;
   }
 
   .Logo-box {
