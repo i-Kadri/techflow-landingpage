@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { FaBolt } from "react-icons/fa6";
+import { useState } from "react";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ function Navbar() {
     <nav className="navbar-box" role="navigation" aria-label="Main">
       <div className="Logo-box">
         <div className="logo-icon" aria-hidden="true">
-          <FaBolt size={20} color="white" />
+          <FaBolt size={20} />
         </div>
         <div className="logo-text">TechFlow</div>
       </div>
@@ -39,24 +39,4 @@ function Navbar() {
     </nav>
   );
 }
-
 export default Navbar;
-
-function burgerMenu() {
-  const navLinks = document.querySelector(".nav-links");
-  const openBtn = document.querySelector(".openBtn");
-  const closeBtn = document.querySelector(".closeBtn");
-
-  openBtn.addEventListener("click", () => {
-    navLinks.style.display = "flex";
-    openBtn.style.display = "none";
-    closeBtn.style.display = "block";
-  });
-
-  closeBtn.addEventListener("click", () => {
-    navLinks.style.display = "none";
-    openBtn.style.display = "block";
-    closeBtn.style.display = "none";
-  });
-}
-export { burgerMenu };

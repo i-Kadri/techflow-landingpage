@@ -64,20 +64,25 @@
   .nav-links {
     margin-top: -2px;
     position: absolute;
-    top: 68px;
-    left: -40px;
-    width: 100vw;
-    background-color: white;
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* display: none; */
-    border-radius: 0 0 12px 12px;
-    border-bottom: 1px solid #e0e0e0;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    max-width: 320px;
+    background-color: #e6edff;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(59, 62, 238, 0.1);
+    border-radius: 0 0 8px 0;
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   .nav-links li {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     margin: 2rem 0;
     padding: 0.5rem auto;
     text-align: center;
@@ -98,10 +103,14 @@
   .burgerMenu .closeBtn {
     font-size: 24px;
     cursor: pointer;
-    /* display: none; */
+    display: none;
   }
 
   .burgerMenu .openBtn {
     cursor: pointer;
+  }
+
+  .nav-links.open + .burgerMenu .openBtn {
+    display: none;
   }
 }
